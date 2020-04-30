@@ -1,0 +1,13 @@
+Source: ros-verystable-rqt-msg
+Section: misc
+Priority: optional
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), ros-verystable-ament-cmake, ros-verystable-ros-workspace
+Homepage: http://wiki.ros.org/rqt_msg
+Standards-Version: 3.9.2
+
+Package: ros-verystable-rqt-msg
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3-catkin-pkg-modules, ros-verystable-python-qt-binding (>= 0.2.19), ros-verystable-rclpy, ros-verystable-rqt-console, ros-verystable-rqt-gui, ros-verystable-rqt-gui-py, ros-verystable-rqt-py-common, ros-verystable-ros-workspace
+Description: A Python GUI plugin for introspecting available ROS message types.
+ Note that the msgs available through this plugin is the ones that are stored on your machine, not on the ROS core your rqt instance connects to.
